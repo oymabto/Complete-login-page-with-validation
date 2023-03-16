@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		BB67C13429C2199E0093871B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB67C13329C2199E0093871B /* AppDelegate.swift */; };
 		BB67C13629C2199E0093871B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB67C13529C2199E0093871B /* SceneDelegate.swift */; };
-		BB67C13829C2199E0093871B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB67C13729C2199E0093871B /* ViewController.swift */; };
 		BB67C13B29C2199E0093871B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB67C13929C2199E0093871B /* Main.storyboard */; };
 		BB67C13D29C2199F0093871B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB67C13C29C2199F0093871B /* Assets.xcassets */; };
 		BB67C14029C2199F0093871B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB67C13E29C2199F0093871B /* LaunchScreen.storyboard */; };
+		BB67C14829C220830093871B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB67C14729C220830093871B /* LoginViewController.swift */; };
+		BB67C14A29C220950093871B /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB67C14929C220950093871B /* SignupViewController.swift */; };
+		BB67C14C29C220B00093871B /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB67C14B29C220B00093871B /* ForgetPasswordViewController.swift */; };
+		BB67C14E29C220D60093871B /* UpdatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB67C14D29C220D60093871B /* UpdatePasswordViewController.swift */; };
+		BB67C15029C221060093871B /* ListOfUsersAfterLoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB67C14F29C221060093871B /* ListOfUsersAfterLoginTableViewController.swift */; };
+		BB67C15229C226AB0093871B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB67C15129C226AB0093871B /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BB67C13029C2199E0093871B /* Alireza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alireza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB67C13329C2199E0093871B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB67C13529C2199E0093871B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BB67C13729C2199E0093871B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BB67C13A29C2199E0093871B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB67C13C29C2199F0093871B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB67C13F29C2199F0093871B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB67C14129C2199F0093871B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB67C14729C220830093871B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BB67C14929C220950093871B /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		BB67C14B29C220B00093871B /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		BB67C14D29C220D60093871B /* UpdatePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordViewController.swift; sourceTree = "<group>"; };
+		BB67C14F29C221060093871B /* ListOfUsersAfterLoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfUsersAfterLoginTableViewController.swift; sourceTree = "<group>"; };
+		BB67C15129C226AB0093871B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +68,16 @@
 			children = (
 				BB67C13329C2199E0093871B /* AppDelegate.swift */,
 				BB67C13529C2199E0093871B /* SceneDelegate.swift */,
-				BB67C13729C2199E0093871B /* ViewController.swift */,
 				BB67C13929C2199E0093871B /* Main.storyboard */,
 				BB67C13C29C2199F0093871B /* Assets.xcassets */,
 				BB67C13E29C2199F0093871B /* LaunchScreen.storyboard */,
 				BB67C14129C2199F0093871B /* Info.plist */,
+				BB67C14729C220830093871B /* LoginViewController.swift */,
+				BB67C14929C220950093871B /* SignupViewController.swift */,
+				BB67C14B29C220B00093871B /* ForgetPasswordViewController.swift */,
+				BB67C14D29C220D60093871B /* UpdatePasswordViewController.swift */,
+				BB67C14F29C221060093871B /* ListOfUsersAfterLoginTableViewController.swift */,
+				BB67C15129C226AB0093871B /* User.swift */,
 			);
 			path = Alireza;
 			sourceTree = "<group>";
@@ -138,8 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB67C13829C2199E0093871B /* ViewController.swift in Sources */,
+				BB67C14829C220830093871B /* LoginViewController.swift in Sources */,
+				BB67C14A29C220950093871B /* SignupViewController.swift in Sources */,
 				BB67C13429C2199E0093871B /* AppDelegate.swift in Sources */,
+				BB67C14E29C220D60093871B /* UpdatePasswordViewController.swift in Sources */,
+				BB67C15229C226AB0093871B /* User.swift in Sources */,
+				BB67C14C29C220B00093871B /* ForgetPasswordViewController.swift in Sources */,
+				BB67C15029C221060093871B /* ListOfUsersAfterLoginTableViewController.swift in Sources */,
 				BB67C13629C2199E0093871B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
