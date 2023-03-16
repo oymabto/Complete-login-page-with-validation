@@ -43,8 +43,13 @@ class SignupViewController: UIViewController {
             let alertController = UIAlertController(title: "SignUp Failed", message: "\nSorry, the password confirmation is incorrect. Please try again.", preferredStyle: .alert)
             // Initializes a new UIAlertController object, which is used to display alerts to the user. The title, message, and preferredStyle are set with the given values.
             
-            alertController.addAction(UIAlertAction(title: "Ok! 🙈", style: .default, handler: nil))
-            // Adds an action to the alertController. The UIAlertAction is initialized with the title "OK", a default style, and a nil handler, meaning no specific action is performed when the button is tapped, other than dismissing the alert.
+            alertController.addAction(UIAlertAction(title: "Ok! 🙈", style: .default, handler: { [weak self] _ in
+                self?.passwordConfirmationTF.becomeFirstResponder()
+            }))
+            // Adds an action to the alertController. The UIAlertAction is initialized with the title "OK", a default style, and a handler.
+            // The closer after handler gets executed when the action button is tapped. The closure takes one parameter, which is the UIAlertAction itself, represented by the _ placeholder.
+            // The closure captures a weak reference to self (the UpdatePasswordViewController) to avoid a strong reference cycle.
+            // [weak self] creates a weak reference to self within the closure. By doing this, you avoid a strong reference cycle between the closure and the UpdatePasswordViewController instance. If the closure were to capture a strong reference to self, it could potentially cause a memory leak if the UpdatePasswordViewController instance is deallocated while the closure is still holding a strong reference.
             
             self.present(alertController, animated: true, completion: nil)
             // This line presents the alertController on the screen. The animated: true parameter indicates that the presentation should be animated, while the completion: nil parameter indicates that no specific action should be performed after the presentation completes.
@@ -56,8 +61,13 @@ class SignupViewController: UIViewController {
             let alertController = UIAlertController(title: "SignUp Failed", message: "\nSorry, username is already taken. Please choose another user name!", preferredStyle: .alert)
             // Initializes a new UIAlertController object, which is used to display alerts to the user. The title, message, and preferredStyle are set with the given values.
             
-            alertController.addAction(UIAlertAction(title: "Ok! 🙈", style: .default, handler: nil))
-            // Adds an action to the alertController. The UIAlertAction is initialized with the title "OK", a default style, and a nil handler, meaning no specific action is performed when the button is tapped, other than dismissing the alert.
+            alertController.addAction(UIAlertAction(title: "Ok! 🙈", style: .default, handler: { [weak self] _ in
+                self?.userNameTF.becomeFirstResponder()
+            }))
+            // Adds an action to the alertController. The UIAlertAction is initialized with the title "OK", a default style, and a handler.
+            // The closer after handler gets executed when the action button is tapped. The closure takes one parameter, which is the UIAlertAction itself, represented by the _ placeholder.
+            // The closure captures a weak reference to self (the UpdatePasswordViewController) to avoid a strong reference cycle.
+            // [weak self] creates a weak reference to self within the closure. By doing this, you avoid a strong reference cycle between the closure and the UpdatePasswordViewController instance. If the closure were to capture a strong reference to self, it could potentially cause a memory leak if the UpdatePasswordViewController instance is deallocated while the closure is still holding a strong reference.
             
             self.present(alertController, animated: true, completion: nil)
             // This line presents the alertController on the screen. The animated: true parameter indicates that the presentation should be animated, while the completion: nil parameter indicates that no specific action should be performed after the presentation completes.
