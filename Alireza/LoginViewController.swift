@@ -185,9 +185,8 @@ class LoginViewController: UIViewController {
         }
         
         func didUpdateUserPassword(_ user: User) {
-        // 
             if let index = users.firstIndex(where: { $0.userName == user.userName }) {
-            // uses the firstIndex(where:) method to find the index of the first user object in the users array whose userName property matches the userName of the passed-in user object.
+            // Uses the firstIndex(where:) method to find the index of the first user object in the users array whose userName property matches the userName of the passed-in user object.
                 
                 users[index] = user
                 // Updates the users array at the found index with the updated user object. This effectively replaces the old user object with the updated one, which contains the new password.
